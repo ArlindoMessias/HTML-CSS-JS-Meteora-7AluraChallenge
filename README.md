@@ -20,7 +20,7 @@
 
 ## Objetivo do Projeto
 <p align="justify">
-O projeto consiste em uma página HMTL do Combo Plus, que é a mistura do Alura Plus e o Alura Língua, a página funciona como um comercial promovendo e incentivando a assinatura do Combo Plus.</p>
+Histótia do projeto: A Meteora é uma empresa do comércio eletrônico de roupas atemporais, casuais e sem gênero, buscando alcançar um novo patamar e consolidando-se como uma empresa mais digital. Para isso, eles solicitaram a criação de um site de e-commerce.</p>
 
 ## Exemplo de Funcionamento da Aplicação
 (Add fotos)
