@@ -1,0 +1,215 @@
+
+.cabeçalho{
+    background-color: var(--preto);
+    padding: 1.8em 23px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8%;
+}
+
+.container_left{
+    display: flex;
+    align-items: center;
+    gap: 8%;
+}
+
+.lista-menu{
+    display: flex;
+    gap: 8%;
+}
+.container__imagem{
+    height: 1.5em;
+    width: auto;
+}
+.lista-menu__link{
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--branco);
+}
+.container__right{
+    width: 30w;
+    gap: 16px;
+    display: flex;
+    justify-content: right;
+}
+.container__pesquisa{
+    border: 1px solid var(--input-state-default, #CED4DA); 
+    width: 65%;
+    padding: 12px 6px;
+}
+
+.botao_buscar{
+    border: 1px solid #FFF;
+    display: inline-flex;
+    padding: 9px 12px;
+    background-color: black;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.457px;
+
+}
+.container__pesquisa::placeholder{
+    color: #6C757D;
+    font-family: Inter;
+    font-size: 15px;   
+}
+
+.cabeçalho_inferior{
+    display: none;
+}
+
+.hamb_menu__button, .hamb_menu__nav{
+    display: none;
+}
+
+@media screen and (min-width:768px) and (max-width:1440px){
+    .container_left{
+        gap: 5%;
+        flex-wrap: nowrap;
+        width: 63%;
+    }
+    .lista-menu{
+        display: flex;
+        gap: 18px;
+    }
+    .lista-menu__link{
+        font-size: 13px;
+    }
+    .container__imagem{
+        height: 1em;
+        width: auto;
+    }
+    .container__right{
+        width: 37%;
+        flex-wrap: nowrap;
+    }
+    .container__pesquisa{
+        width: 57%;
+        padding: 8x 0px;
+    }
+    .botao_buscar{
+        padding: 9px 5px;
+        font-size: 13px;
+    }
+    
+    .container__pesquisa::placeholder{
+        font-size: 13px;  
+        align-items: left; 
+        padding: 0 2px;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:767px){
+    .cabeçalho{
+        padding: 20px 20px;
+    }
+    
+    .container__imagem{
+        height: 100%;
+        width: auto;
+    }
+    
+    .lista-menu{
+        display: none;
+    }
+    .container__right{
+        display: none;
+    }
+
+    .cabeçalho_inferior{
+        background-color: #ffffff;
+        padding: 1.2em 20px;
+        display: flex;
+        gap: 10px;
+        border: 1px solid #000000;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .botao_buscar{
+        background-color: #FFF;
+        font-size: 16px;
+        color: #000;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal; 
+        border: 1px solid #000000;
+    }
+    .container__pesquisa{
+        border: 1px solid #000; 
+    }
+    .container__pesquisa::placeholder{
+        align-items: center; 
+        font-size: 14px;
+    }
+
+    hr{
+        width: 110px;
+        height: 0.1px; 
+        background: #CED4DA;
+    }
+
+    .hamb_menu__button{  
+        display: block;
+        margin-top: -7px;
+        padding: 5px;
+        font-weight: bold;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        border: none;
+        background-image: url("../img/menu-hamb.png");
+        background-repeat: no-repeat;
+        background-size: 80% 80%;
+        background-position: center;
+        background-color: transparent;
+        position: absolute;
+        right: 23px;
+        z-index: 2;
+        
+    }
+    .hamb_menu__nav{
+        display: none;
+    } 
+    
+    /*exibir o menu ao clicar no botao*/
+    .hamb_menu__nav-active{
+        display: block;
+    }
+    /*estilo da lista de itens*/
+    .hamb_menu__lista{
+        display: flex;
+        flex-direction: column;
+        position:absolute;
+        right: 0px;
+        top:0px;
+        padding: 42px 25px 10px 10px;
+        background-color: #6C757D;
+    }
+
+    .hamb_menu__link2{
+        color: #FFF;
+        text-decoration: none;
+        padding: 8px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        font-size: 18px;
+    }
+        
+    .hamb_menu__link1{
+        color: #DAFF01;
+        font-weight: 700;
+        line-height: 23px;
+        text-decoration: none;
+        padding: 8px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        font-size: 18px;
+    }
+}   
+

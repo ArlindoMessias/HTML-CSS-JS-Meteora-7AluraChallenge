@@ -1,0 +1,22 @@
+@import url("styles/header.css");
+
+:root {
+    --cor-de-fundo: #FFFFFF;
+    --preto: black;
+    --branco: #FFFFFF;
+    --fundo-verde:#DAFF01;
+    --roxo:#9353FF;
+    --cor-fonte-principal-preto: #212529;
+    --fonte-principal:"Inter";
+
+ 
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--branco);
+}
+
